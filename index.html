@@ -2,118 +2,277 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect " href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
-  <main>
-    <div class="header-section">
-      <div class="pricing-cont">
-        <h1>
-          Our Pricing
-        </h1>
-        <div class="toggle-section">
-          <p>
-            Annually
-          </p>
-          <div class="container">
-            <div class="toggle-btn" onclick="btnToggle()">
-              <div class="inner-circle"></div>
-            </div>
-          </div>
-          <p>
-            Monthly
-          </p>
+  <header>
+    <nav>
+      <div class="header-flex">
+        <a href="#">
+          <img role="presentation" alt="" class="logo-img" src="images/logo-bookmark.svg">
+        </a>
+        <div class="toggle-on-cont">
+          <button class="toggle-on">
+            <img role="presentation" alt="" class="open-icon" src="images/icon-hamburger.svg">
+          </button>
         </div>
+        <div class="toggle-off-cont">
+          <button class="toggle-off">
+            <img role="presentation" alt="" class="close-icon" src="images/icon-close.svg">
+          </button>
+        </div>
+      </div>
+      <div class="menu-container">
+        <img role="presentation" alt="" class="logo-img-menu" src="images/logo-bookmark-menu.svg">
+        <ul class="header-links">
+          <li>
+            <a href="#">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a class="login-link" href="#">
+              Login
+            </a>
+          </li>
+        </ul>
+        <ul class="header-socials">
+          <li>
+            <a href="#">
+              <img src="images/icon-facebook.svg">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/icon-twitter.svg">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="intro-img-cont">
+
+      <img alt="illustration hero image" class="intro-img" src="images/illustration-hero.svg">
+    </div>
+    <section class="header-text">
+      <h1>
+        A Simple Bookmark Manager
+      </h1>
+      <p class="header-p">
+        A clean and simple interface to organize your   favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <div class="header-btn-cont">
+        <button class="chrome-btn">
+          Get it on Chrome
+        </button>
+        <button class="firefox-btn">
+          Get it on Firefox
+        </button>
+      </div>
+    </section>
+  </header>
+  <section class="features-section">
+    <h2 class="features-h2">
+      Features
+    </h2>
+    <p class="features-p">
+      Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+    <div id="feature-btn-cont">
+      <div class="simple-btn-cont">
+        <button onclick="toggleSimple()" id="simple-btn">
+          Simple Bookmarking
+        </button>
+      </div>
+      <div class="speedy-btn-cont">
+        <button onclick="toggleSpeedy()" id="speedy-btn">
+          Speedy Searching
+        </button>
+      </div>
+      <div class="easy-btn-cont">
+        <button onclick="toggleEasy()" id="easy-btn">
+          Easy Sharing
+        </button>
       </div>
     </div>
-    <div class="sections-cont">
-      <div class="basic-section">
-        <p class="header-p-basic">
-          Basic
-        </p>
-        <h2 id="monthly-basic">
-          <span>&dollar;</span>19.99
-        </h2>
-        <h2 id="yearly-basic">
-          <span>&dollar;</span>199.99
-        </h2>
-        <p class="storage-p">
-          500 GB Storage
-        </p>
-        <p class="users-p">
-          2 Users Allowed
-        </p>
-        <p class="datacap-p">
-          Send up to 3 GB
-        </p>
-        <div class="purple-btn">
-          <button>
-            Learn More
-          </button>
-        </div>
+    <div id="bookmark-div">
+      <div id="tab-1-img-cont">
+        <img alt="illustration tab 1 image" class="tab-1-img" src="images/illustration-features-tab-1.svg">
       </div>
-      <div class="professional-section">
-        <p class="header-p-pro">
-          Professional
-        </p>
-        <h2 id="monthly-pro">
-          <span>&dollar;</span>24.99
-        </h2>
-        <h2 id="yearly-pro">
-          <span>&dollar;</span>249.99
-        </h2>
-        <p class="storage-p">
-          1 TB Storage
-        </p>
-        <p class="users-p">
-          5 Users Allowed
-        </p>
-        <p class="datacap-p">
-          Send up to 10 GB
-        </p>
-        <div class="white-btn">
-          <button>
-            Learn More
-          </button>
-        </div>
-      </div>
-      <div class="master-section">
-        <p class="header-p-master">
-          Master
-        </p>
-        <h2 id="monthly-master">
-          <span>&dollar;</span>39.99
-        </h2>
-        <h2 id="yearly-master">
-          <span>&dollar;</span>399.99
-        </h2>
-        <p class="storage-p">
-          2 TB Storage
-        </p>
-        <p class="users-p">
-          10 Users Allowed
-        </p>
-        <p class="datacap-p">
-          Send up to 20 GB
-        </p>
-        <div class="purple-btn">
-          <button>
-            Learn More
-          </button>
-        </div>
+      <h2 class="bookmark-h2">
+        Bookmark in one click
+      </h2>
+      <p class="bookmark-p">
+        Organize your bookmarks however you like. Our simple drag-and-drop interface 
+        gives you complete control over how you manage your favourite sites.
+      </p>
+      <div class="more-info-btn">
+        <button>
+          More Info
+        </button>
       </div>
     </div>
-    <div class="attribution">
+    <div id="intelligent-div">
+      <div class="tab-2-img-cont">
+        <img alt="illustration tab 2 image" class="tab-2-img" src="images/illustration-features-tab-2.svg">
+      </div>
+      <h2 class="intelligent-h2">
+        Intelligent search
+      </h2>
+      <p class="intelligent-p">
+        Our powerful search feature will help you find saved sites in no time at all. 
+        No need to trawl through all of your bookmarks.
+      </p>
+      <div class="more-info-btn">
+        <button>
+          More Info
+        </button>
+      </div>
+    </div>
+    <div id="share-div">
+      <div class="tab-3-img-cont">
+        <img alt="illustration tab 3 image" class="tab-3-img" src="images/illustration-features-tab-3.svg">
+      </div>
+      <h2 class="share-h2">
+        Share your bookmarks
+      </h2>
+      <p class="share-p">
+        Easily share your bookmarks and collections with others. Create a shareable 
+        link that you can send at the click of a button.
+      </p>
+      <div class="more-info-btn">
+        <button>
+          More Info
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="extension-section">
+    <h2 class="extension-h2">
+      Download the extension
+    </h2>
+    <p class="extension-p">
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.
+    </p>
+    <div class="google-div">
+      <img role="presentation" alt="" class="extension-logos" src="images/logo-chrome.svg">
+      <p class="add-para">
+        Add to Chrome
+      </p>
+      <p class="version-para">
+        Minimum version 62
+      </p>
+      <img role="presentation" alt="" class="dots-img" src="images/bg-dots.svg">
+      <div class="install-btn-cont">
+        <button>
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+    <div class="firefox-div">
+      <img role="presentation" alt="" class="extension-logos" src="images/logo-firefox.svg">
+      <p class="add-para">
+        Add to Firefox
+      </p>
+      <p class="version-para">
+        Minimum version 55
+      </p>
+      <img role="presentation" alt="" class="dots-img" src="images/bg-dots.svg">
+      <div class="install-btn-cont">
+        <button>
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+    <div class="opera-div">
+      <img role="presentation" alt="" class="extension-logos" src="images/logo-opera.svg">
+      <p class="add-para">
+        Add to Opera
+      </p>
+      <p class="version-para">
+        Minimum version 46
+      </p>
+      <img role="presentation" alt="" class="dots-img" src="images/bg-dots.svg">
+      <div class="install-btn-cont">
+        <button>
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+  </section>
+  Frequently Asked Questions
+  
+  Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us.
+
+  <!-- Question 1 -->
+  What is Bookmark?
+
+  <!-- Answer 1 -->
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+
+  <!-- Question 2 -->
+  How can I request a new browser?
+
+  <!-- Answer 2 -->
+  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+  <!-- Question 3 -->
+  Is there a mobile app?
+
+  <!-- Answer 3 -->
+  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum.
+
+  <!-- Question 4 -->
+  What about other Chromium browsers?
+
+  <!-- Answer 4 -->
+  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit.
+
+  More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+  
+  <footer>
+    <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/YousefKhalid-iq/pricing-component-with-toggle">Yousef Khalid</a>.
-    </div>
-  </main>
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>
