@@ -11,26 +11,33 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+- Soft Blue: hsl(231, 69%, 60%)
+- Soft Red: hsl(0, 94%, 66%)
 
 ### Neutral
 
-- Very Light Grayish Blue: hsl(240, 78%, 98%)
-- Light Grayish Blue: hsl(234, 14%, 74%)
-- Grayish Blue: hsl(233, 13%, 49%)
-- Dark Grayish Blue: hsl(232, 13%, 33%)
+- Grayish Blue: hsl(229, 8%, 60%)
+- Very Dark Blue: hsl(229, 31%, 21%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size: 18px
 
-### Font
+### Fonts
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weight: 700
-
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500
 - what to type :
+- font-family: 'Rubik', sans-serif;
 
-- font-family: 'Montserrat', sans-serif;
+## Icons
+
+For the icons in the design, you can choose between using the icons provided or an font icon library.
+
+Some library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
