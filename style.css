@@ -320,10 +320,29 @@ h1 {
   color: hsl(229, 8%, 60%);
   width: 85%;
   margin: 0 auto;
+  line-height: 1.5rem;
 }
 
 .extension-section {
   width: 100%;
+}
+
+.extension-h2, .faq-h2 {
+  text-align: center;
+  color: hsl(229, 31%, 21%);
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+.extension-p, .faq-p {
+  text-align: center;
+  color: hsl(229, 8%, 60%);
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  padding-bottom: 6%;
 }
 
 .extension-logos {
@@ -333,7 +352,7 @@ h1 {
 
 .google-div, .firefox-div, .opera-div {
   width: 75%;
-  margin: 10% auto;
+  margin: 0 auto 10% auto;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0px 0px 10px hsl(229, 8%, 90%);
   border-radius: 1rem;
@@ -344,13 +363,13 @@ h1 {
   text-align: center;
   font-weight: 500;
   font-size: 1.2rem;
-  padding-top: 10%;
+  padding-top: 12%;
 }
 
 .version-para {
   color: hsl(229, 8%, 60%);
   text-align: center;
-  padding: 3% 0;
+  padding: 4% 0;
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -358,7 +377,7 @@ h1 {
 .dots-img {
   width: 100%;
   display: block;
-  margin: 5% 0;
+  margin: 7% 0;
 }
 
 .install-btn-cont {
@@ -370,7 +389,7 @@ h1 {
 .install-btn-cont button {
   background-color: hsl(231, 69%, 60%);
   color: hsl(0, 0%, 90%);
-  padding: 4% 15%;
+  padding: 6% 15%;
   margin: 0 1%;
   border-radius: 0.4rem;
   border-width: 0;
@@ -378,6 +397,85 @@ h1 {
   box-shadow: 0px 5px 10px hsl(229, 8%, 80%);
   cursor: pointer;
   font-size: 0.9rem;
+}
+
+.extension-section {
+  padding-bottom: 22%;
+}
+
+.faq-btn-cont {
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.faq-btn-1, .faq-btn-2, .faq-btn-3, .faq-btn-4 {
+  border-bottom: 1px solid hsl(229, 8%, 80%);
+} 
+
+.faq-btn-cont button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border-width: 0;
+  cursor: pointer;
+  color: hsla(229, 8%, 10%, 0.8);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 7% 0;
+  display: flex;
+}
+
+.faq-btn-cont p {
+  color: hsl(229, 8%, 50%);
+  font-size: 0.9rem;
+  display: none;
+}
+
+#close-arrow {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 10%;
+  display: none;
+}
+
+#open-arrow1, #open-arrow2, #open-arrow3, #open-arrow4 {
+  display: block;
+  position: absolute;
+  right: 10%;
+  transition: 0.3s all ease-in-out;
+}
+
+#faq-answer1 {
+  line-height: 1.6rem;
+}
+
+#faq-answer2 {
+  line-height: 1.6rem;
+}
+
+#faq-answer3 {
+  line-height: 1.6rem;
+}
+
+#faq-answer4 {
+  line-height: 1.6rem;
+}
+
+.info-btn {
+  width: 30%;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.info-btn button {
+  width: 100%;
+  background-color: hsl(231, 69%, 60%);
+  border-width: 0;
+  border-radius: 0.4rem;
+  padding: 12% 10%;
+  color: hsl(0, 0%, 98%);
+  font-weight: 500;
 }
 
 .attribution { 
