@@ -42,16 +42,37 @@ const main = document.getElementById("feature-btn-cont");
 const btn1 = document.getElementById("simple-btn");
 const btn2 = document.getElementById("speedy-btn");
 const btn3 = document.getElementById("easy-btn");
+const border1 = document.getElementById("border-cont1");
+const border2 = document.getElementById("border-cont2");
+const border3 = document.getElementById("border-cont3");
 
 function toggleSimple() {
 	if (tab1.style.display === "none") {
 		tab1.style.display = "block";
 		tab2.style.display = "none";
 		tab3.style.display = "none";
+		border1.style.visibility = "visible";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(0, 0%, 0%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 	} else {
 		tab1.style.display = "block"
 		tab2.style.display ="none";
 		tab3.style.display = "none";
+		border1.style.visibility = "visible";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(0, 0%, 0%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 		btn1.addEventListener("click", function() {
 			tab1.classList.toggle("select-1")
 		});
@@ -63,10 +84,28 @@ function toggleSpeedy() {
 		tab2.style.display = "block";
 		tab1.style.display = "none";
 		tab3.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "visible";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(0, 0%, 0%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 	} else {
 		tab2.style.display = "block";
 		tab1.style.display = "none";
 		tab3.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "visible";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(0, 0%, 0%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 		btn2.addEventListener("click", function() {
 			tab2.classList.toggle("select-1")
 		});
@@ -78,10 +117,28 @@ function toggleEasy() {
 		tab3.style.display = "block";
 		tab1.style.display = "none";
 		tab2.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "visible";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(0, 0%, 0%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 	} else {
 		tab1.style.display = "none";
 		tab2.style.display = "none";
 		tab3.style.display = "block";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "visible";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(0, 0%, 0%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
 		btn3.addEventListener("click", function() {
 			tab3.classList.toggle("select-1")
 		});
