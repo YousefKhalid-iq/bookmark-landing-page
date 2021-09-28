@@ -96,13 +96,15 @@ let faq4;
 function show_hide_faq1() {
 	if (faq1==1) {
 		document.getElementById("faq-answer1").style.display="none";
-		document.getElementById("open-arrow1").style.transform="rotate(0deg)";
-		document.getElementById("open-arrow1").style.filter="invert(0.33) sepia(1) saturate(10.8) hue-rotate(130.6deg) brightness(1);";
+		document.getElementById("open-arrow1").style.display="block";
+		document.getElementById("close-arrow1").style.display="none";
+		document.getElementById("open-arrow1").style.transform="rotate(0deg)"
 		return faq1=0;
 	} else {
 		document.getElementById("faq-answer1").style.display="block";
-		document.getElementById("open-arrow1").style.transform="rotate(180deg)";
-		document.getElementById("open-arrow1").style.filter="invert(0.80) sepia(1) saturate(5.8) hue-rotate(80.6deg) brightness(1);";
+		document.getElementById("close-arrow1").style.transform="rotate(180deg)";
+		document.getElementById("close-arrow1").style.display="block";
+		document.getElementById("open-arrow1").style.transform="rotate(180deg)"
 		return faq1=1;
 	}		
 }
@@ -110,13 +112,15 @@ function show_hide_faq1() {
 function show_hide_faq2() {
 	if (faq2==1) {
 		document.getElementById("faq-answer2").style.display="none";
-		document.getElementById("open-arrow2").style.transform="rotate(0deg)";
-		document.getElementById("open-arrow2").style.filter="invert(0.33) sepia(1) saturate(10.8) hue-rotate(130.6deg) brightness(1);";
+		document.getElementById("open-arrow2").style.display="block";
+		document.getElementById("close-arrow2").style.display="none";
+		document.getElementById("open-arrow2").style.transform="rotate(0deg)"
 		return faq2=0;
 	} else {
 		document.getElementById("faq-answer2").style.display="block";
-		document.getElementById("open-arrow2").style.transform="rotate(180deg)";
-		document.getElementById("open-arrow2").style.filter="invert(0.80) sepia(1) saturate(5.8) hue-rotate(80.6deg) brightness(1);";
+		document.getElementById("close-arrow2").style.transform="rotate(180deg)";
+		document.getElementById("close-arrow2").style.display="block";
+		document.getElementById("open-arrow2").style.transform="rotate(180deg)"
 		return faq2=1;
 	}		
 }
@@ -124,28 +128,32 @@ function show_hide_faq2() {
 function show_hide_faq3() {
 	if (faq3==1) {
 		document.getElementById("faq-answer3").style.display="none";
-		document.getElementById("open-arrow3").style.transform="rotate(0deg)";
-		document.getElementById("open-arrow3").style.filter="invert(0.33) sepia(1) saturate(10.8) hue-rotate(130.6deg) brightness(1);";
+		document.getElementById("open-arrow3").style.display="block";
+		document.getElementById("close-arrow3").style.display="none";
+		document.getElementById("open-arrow3").style.transform="rotate(0deg)"
 		return faq3=0;
 	} else {
 		document.getElementById("faq-answer3").style.display="block";
-		document.getElementById("open-arrow3").style.transform="rotate(180deg)";
-		document.getElementById("open-arrow3").style.filter="invert(0.80) sepia(1) saturate(5.8) hue-rotate(80.6deg) brightness(1);";
+		document.getElementById("close-arrow3").style.transform="rotate(180deg)";
+		document.getElementById("close-arrow3").style.display="block";
+		document.getElementById("open-arrow3").style.transform="rotate(180deg)"
 		return faq3=1;
-	}	
+	}		
 }
 
 function show_hide_faq4() {
 	if (faq4==1) {
-			document.getElementById("faq-answer4").style.display="none";
-			document.getElementById("open-arrow4").style.transform="rotate(0deg)";
-			document.getElementById("open-arrow4").style.filter="invert(0.33) sepia(1) saturate(10.8) hue-rotate(130.6deg) brightness(1);";
-			return faq4=0;
-		} else {
-			document.getElementById("faq-answer4").style.display="block";
-			document.getElementById("open-arrow4").style.transform="rotate(180deg)";
-			document.getElementById("open-arrow4").style.filter="invert(0.80) sepia(1) saturate(5.8) hue-rotate(80.6deg) brightness(1);";
-			return faq4=1;
-	}	
+		document.getElementById("faq-answer4").style.display="none";
+		document.getElementById("open-arrow4").style.display="block";
+		document.getElementById("close-arrow4").style.display="none";
+		document.getElementById("open-arrow4").style.transform="rotate(0deg)"
+		return faq4=0;
+	} else {
+		document.getElementById("faq-answer4").style.display="block";
+		document.getElementById("close-arrow4").style.transform="rotate(180deg)";
+		document.getElementById("close-arrow4").style.display="block";
+		document.getElementById("open-arrow4").style.transform="rotate(180deg)"
+		return faq4=1;
+	}		
 }
 		

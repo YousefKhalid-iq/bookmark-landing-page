@@ -233,6 +233,7 @@
       <button onclick="show_hide_faq1()">
         What is Bookmark?
         <img role="presentation" alt="" id="open-arrow1" src="images/icon-arrow-open.svg">
+        <img role="presentation" alt="" id="close-arrow1" src="images/icon-arrow-close.svg">
       </button>
       <!-- Answer 1 -->
       <p id="faq-answer1">
@@ -245,7 +246,7 @@
       <button onclick="show_hide_faq2()">
         How can I request a new browser?
         <img role="presentation" alt="" id="open-arrow2" src="images/icon-arrow-open.svg">
-        <!--<img role="presentation" alt="" id="close-arrow"src="images/icon-arrow-close.svg">-->
+        <img role="presentation" alt="" id="close-arrow2" src="images/icon-arrow-close.svg">
       </button>
       <p id="faq-answer2">
        <!-- Answer 2 -->
@@ -260,6 +261,7 @@
       <button onclick="show_hide_faq3()">
         Is there a mobile app?
         <img role="presentation" alt="" id="open-arrow3" src="images/icon-arrow-open.svg">
+        <img role="presentation" alt="" id="close-arrow3" src="images/icon-arrow-close.svg">
       </button>
       <!-- Answer 3 -->
       <p id="faq-answer3">
@@ -273,6 +275,7 @@
       <button onclick="show_hide_faq4()">
         What about other Chromium browsers?
         <img role="presentation" alt="" id="open-arrow4" src="images/icon-arrow-open.svg">
+        <img role="presentation" alt="" id="close-arrow4" src="images/icon-arrow-close.svg">
       </button>
       <!-- Answer 4 -->
       <p id="faq-answer4">
@@ -287,17 +290,54 @@
     </button>
   </div>
   </section>
-  35,000+ already joined
+  <section class="contact-form-section">
+    <p class="form-para">
+      35,000+ already joined
+    </p>
+    <h2 class="form-h2">
+      Stay up-to-date with what we’re doing
+    </h2>
+    <form action="#">
+      <input class="email-input" type="email" name="email" placeholder="Enter your email address" aria-label="error__message">
+      <div class="email-validation" aria-live="assertive">Whoops, make sure it's an email</div>
+      <label></label>
+      <button aria-label="email" type="submit">Contact Us</button>
 
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
+    </form>
+  </section>
   <footer>
+    <img role="presentation" alt="" class="logo-img-footer" src="images/logo-bookmark-footer.svg">
+    <ul class="footer-links">
+      <li>
+        <a href="#">
+          Features
+      
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Pricing
+      
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <ul class="footer-socials">
+      <li>
+        <a href="#">
+          <img src="images/icon-facebook.svg">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/icon-twitter.svg">
+        </a>
+      </li>
+    </ul>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
