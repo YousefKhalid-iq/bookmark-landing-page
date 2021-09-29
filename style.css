@@ -265,19 +265,21 @@ h1 {
 }
 
 #bookmark-div {
-  display: block;
+  visibility: visible;
+  height: 100%;
 }
 
 .select-1 {
-  display: none;
+  visibility: none;
+  height: 100%;
 }
 
 #intelligent-div {
-  display: none;
+  visibility: none;
 }
 
 #share-div {
-  display: none;
+  visibility: none;
 }
 
 .tab-1-img, .tab-2-img, .tab-3-img {
@@ -795,16 +797,21 @@ footer {
     width: 100%;
   }
 
-  .speedy-btn-cont {
+  .speedy-btn-cont, .easy-btn-cont, .simple-btn-cont {
     margin: 0 auto;
-  }
-
-   .easy-btn-cont {
-    
+    width: 33.3%;
   }
 
   .speedy-btn-cont {
-    margin: 0 auto;
+    margin-left: 5%;
+  }
+
+  #border-cont1, #border-cont2, #border-cont3 {
+    margin: 1.3% auto 0 auto;
+  }
+
+  #bookmark-div, #intelligent-div, #share-div {
+
   }
 }
 
