@@ -138,6 +138,7 @@ nav {
 .intro-img {
   width: 100%;
   display: block;
+  margin-bottom: 5%;
 }
 
 .header-text {
@@ -218,6 +219,7 @@ h1 {
 
 #feature-btn-cont {
   text-align: center;
+  width: 100%;
 }
 
 #simple-btn, #speedy-btn, #easy-btn {
@@ -633,6 +635,10 @@ footer {
   .logo-img-menu {
     margin: 9% 8%;
   }
+
+  #border-cont3 {
+    margin-top: -1%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -642,6 +648,10 @@ footer {
 
   .logo-img-menu {
     margin: 8% 8%;
+  }
+
+  #border-cont3 {
+    margin-top: -0.9%;
   }
 }
 
@@ -656,12 +666,121 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    width: 90%;
+    margin: 5% auto 0 auto;
+  }
+
   .logo-img {
-    margin: 35% 20%;
+    margin: 0;
+  }
+
+  .header-flex {
+    width: 40%;
+  }
+
+  .menu-container {
+    visibility: visible;
+    position: relative;
+    width: 60%;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .toggle-on-cont {
+    display: none;
+  }
+
+  .toggle-off-cont {
+    display: none;
   }
 
   .logo-img-menu {
-    margin: 7% 8%;
+    display: none;
+  }
+
+  .header-links {
+    width: 100%;
+    padding: 0;
+    text-align: right;
+  }
+
+  .header-links li {
+    width: 20%;
+    display: inline;
+    padding: 0 1%;
+    border: 0;
+  }
+
+  .header-links a {
+    color: hsl(229, 31%, 21%);
+    font-size: 1rem;
+  }
+
+  .login-link {
+    border: 0; 
+    border-radius: 0.5rem;
+    background-color: hsl(0, 94%, 66%);
+    padding: 3% 4%;
+  }
+
+  .login-link span {
+    color: hsl(229, 8%, 95%);
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .intro-img-cont {
+    width: 50%;
+  }
+
+  .text-cont {
+    width: 50%;
+  }
+
+  h1 {
+    padding-top: 15%;
+    text-align: left;
+  }
+
+  .header-p {
+    text-align: left;
+  }
+
+  .header-btn-cont {
+    text-align: left;
+    width: 85%;
+    margin: 0 6%;
+  }
+
+  .features-h2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .features-p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.4rem;
+  }
+
+  #feature-btn-cont {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  #simple-btn, #speedy-btn, #easy-btn {
+    border-top: 0;
+    border-bottom: 0;
   }
 }
 
