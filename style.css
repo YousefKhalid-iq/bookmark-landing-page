@@ -20,7 +20,7 @@ nav {
 }
 
 .logo-img {
-  margin: 25% 20%;
+  margin: 30% 20%;
 }
 
 .toggle-on {
@@ -615,13 +615,63 @@ footer {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 425px) {
+  .logo-img {
+    margin: 31% 20%;
+  }
+
+  .logo-img-menu {
+    margin: 10.5% 8%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .logo-img {
+    margin: 30% 20%;
+  }
+
+  .logo-img-menu {
+    margin: 9% 8%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .logo-img {
+    margin: 29% 20%;
+  }
+
+  .logo-img-menu {
+    margin: 8% 8%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .logo-img {
+    margin: 30% 20%;
+  }
+
+  .logo-img-menu {
+    margin: 9% 8%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-img {
+    margin: 35% 20%;
+  }
+
+  .logo-img-menu {
+    margin: 7% 8%;
+  }
+}
+
 .attribution { 
   font-size: 11px; text-align: center; 
   color: hsl(0, 94%, 66%);
 }
 
 .attribution a { 
-  color: hsl(0, 0%, 100%); 
+  color: hsl(231, 69%, 60%); 
   text-decoration: none;
 }
 
