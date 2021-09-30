@@ -265,21 +265,19 @@ h1 {
 }
 
 #bookmark-div {
-  visibility: visible;
-  height: 100%;
+  display: block;
 }
 
 .select-1 {
-  visibility: none;
-  height: 100%;
+  display: none;
 }
 
 #intelligent-div {
-  visibility: none;
+  display: none;
 }
 
 #share-div {
-  visibility: none;
+  display: none;
 }
 
 .tab-1-img, .tab-2-img, .tab-3-img {
@@ -810,8 +808,28 @@ footer {
     margin: 1.3% auto 0 auto;
   }
 
-  #bookmark-div, #intelligent-div, #share-div {
+  #bookmark-div {
+    visibility: visible;
+    height: 100%;
+  }
 
+  .select-1 {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #intelligent-div {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #share-div {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #bookmark-div, #intelligent-div, #share-div {
+    display: flex;
   }
 }
 
