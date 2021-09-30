@@ -46,7 +46,109 @@ const border1 = document.getElementById("border-cont1");
 const border2 = document.getElementById("border-cont2");
 const border3 = document.getElementById("border-cont3");
 
-function toggleSimple() {
+let screen = window.matchMedia( "(max-width: 767px)" )
+
+if (screen.matches) {
+	function toggleSimple() {
+	if (tab1.style.display === "none") {
+		tab1.style.display = "block";
+		tab2.style.display = "none";
+		tab3.style.display = "none";
+		border1.style.visibility = "visible";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(0, 0%, 0%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+	} else {
+		tab1.style.display = "block"
+		tab2.style.display ="none";
+		tab3.style.display = "none";
+		border1.style.visibility = "visible";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(0, 0%, 0%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+		btn1.addEventListener("click", function() {
+			tab1.classList.toggle("select-1")
+		});
+	}
+}
+		
+function toggleSpeedy() {
+	if (tab2.style.display === "none") {
+		tab2.style.display = "block";
+		tab1.style.display = "none";
+		tab3.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "visible";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(0, 0%, 0%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+	} else {
+		tab2.style.display = "block";
+		tab1.style.display = "none";
+		tab3.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "visible";
+		border3.style.visibility = "hidden";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(0, 0%, 0%)";
+		btn3.style.color = "hsl(229, 8%, 50%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+		btn2.addEventListener("click", function() {
+			tab2.classList.toggle("select-1")
+		});
+	}	
+}
+		
+function toggleEasy() {
+	if (tab3.style.display === "none") {
+		tab3.style.display = "block";
+		tab1.style.display = "none";
+		tab2.style.display = "none";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "visible";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(0, 0%, 0%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+	} else {
+		tab1.style.display = "none";
+		tab2.style.display = "none";
+		tab3.style.display = "block";
+		border1.style.visibility = "hidden";
+		border2.style.visibility = "hidden";
+		border3.style.visibility = "visible";
+		btn1.style.color = "hsl(229, 8%, 50%)";
+		btn2.style.color = "hsl(229, 8%, 50%)";
+		btn3.style.color = "hsl(0, 0%, 0%)";
+		tab1.style.transition = "0.3s ease-in-out";
+		tab2.style.transition = "0.3s ease-in-out";
+		tab3.style.transition = "0.3s ease-in-out";
+		btn3.addEventListener("click", function() {
+			tab3.classList.toggle("select-1")
+		});
+	}
+}
+} else {
+	function toggleSimple() {
 	if (tab1.style.visibility === "hidden") {
 		tab1.style.visibility = "visible";
 		tab2.style.visibility = "hidden";
@@ -91,9 +193,6 @@ function toggleSpeedy() {
 		tab2.style.visibility = "visible";
 		tab1.style.visibility = "hidden";
 		tab3.style.visibility = "hidden";
-		tab2.style.height = "100%";
-		tab1.style.height = "0";
-		tab3.style.height = "0";
 		border1.style.visibility = "hidden";
 		border2.style.visibility = "visible";
 		border3.style.visibility = "hidden";
@@ -162,7 +261,8 @@ function toggleEasy() {
 			tab3.classList.toggle("select-1")
 		});
 	}
-}	
+}
+}
 
 let faq1;
 let faq2;
