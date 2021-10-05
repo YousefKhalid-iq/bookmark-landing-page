@@ -21,11 +21,12 @@ nav {
 
 .logo-img {
   margin: 20%;
+  margin-top: 24px;
 }
 
 .toggle-on {
   background: transparent;
-  border-width: 0;
+  border-width: 0; 
 }
 
 .toggle-off {
@@ -48,15 +49,15 @@ nav {
 
 .toggle-on-cont {
   position: absolute;
-  right: 8%;
-  top: 10%;
+  top: 30px;
+  right: 6%;
 }
 
 .toggle-off-cont {
   z-index: 100;
   position: absolute;
-  right: 8%;
-  top: 10%;
+  top: 30px;
+  right: 6%;
   visibility: hidden;
 }
 
@@ -740,6 +741,10 @@ footer {
     width: 50%;
   }
 
+  .intro-img-cont:before {
+    right: 0;
+  }
+
   .text-cont {
     width: 50%;
   }
@@ -779,12 +784,6 @@ footer {
 
   #border-cont1, #border-cont2, #border-cont3 {
     width: 100%;
-    margin: 0 auto;
-  }
-
-  #border-cont3 {
-    margin-top: 4%;
-    margin: 0 auto;
   }
 
   #simple-btn, #speedy-btn, #easy-btn {
@@ -795,11 +794,7 @@ footer {
 
   .speedy-btn-cont, .easy-btn-cont, .simple-btn-cont {
     margin: 0 auto;
-    width: 33.3%;
-  }
-
-  .speedy-btn-cont {
-    margin-left: 5%;
+    width: 33.33%;
   }
 
   #bookmark-flex, #intelligent-flex, #share-flex {
