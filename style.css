@@ -20,7 +20,7 @@ nav {
 }
 
 .logo-img {
-  margin: 30% 20%;
+  margin: 20%;
 }
 
 .toggle-on {
@@ -138,7 +138,6 @@ nav {
 .intro-img {
   width: 100%;
   display: block;
-  margin-bottom: 5%;
 }
 
 .header-text {
@@ -219,7 +218,6 @@ h1 {
 
 #feature-btn-cont {
   text-align: center;
-  width: 100%;
 }
 
 #simple-btn, #speedy-btn, #easy-btn {
@@ -256,7 +254,7 @@ h1 {
 }
 
 #border-cont3 {
-  margin: -1.3% auto 0 auto;
+  margin-top: -1.3%;
   border-bottom: 5px solid hsl(0, 94%, 66%);
 }
 
@@ -619,7 +617,7 @@ footer {
 
 @media only screen and (min-width: 425px) {
   .logo-img {
-    margin: 31% 20%;
+    margin: 20%;
   }
 
   .logo-img-menu {
@@ -629,7 +627,7 @@ footer {
 
 @media only screen and (min-width: 500px) {
   .logo-img {
-    margin: 30% 20%;
+    margin: 20%;
   }
 
   .logo-img-menu {
@@ -643,7 +641,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
   .logo-img {
-    margin: 29% 20%;
+    margin: 20%;
   }
 
   .logo-img-menu {
@@ -657,7 +655,7 @@ footer {
 
 @media only screen and (min-width: 700px) {
   .logo-img {
-    margin: 30% 20%;
+    margin: 20%;
   }
 
   .logo-img-menu {
@@ -804,35 +802,14 @@ footer {
     margin-left: 5%;
   }
 
-  #border-cont1, #border-cont2, #border-cont3 {
-    margin: 1.3% auto 0 auto;
-  }
-
-  #bookmark-div {
-    visibility: visible;
-    height: 100%;
-  }
-
-  .select-1 {
-    visibility: hidden;
-    height: 0;
-  }
-
-  #intelligent-div {
-    visibility: hidden;
-    height: 0;
-  }
-
-  #share-div {
-    visibility: hidden;
-    height: 0;
-  }
-
-  #bookmark-div, #intelligent-div, #share-div {
+  #bookmark-flex, #intelligent-flex, #share-flex {
     display: flex;
   }
-}
 
+  .more-info-btn {
+    display: block;
+  }
+}
 .attribution { 
   font-size: 11px; text-align: center; 
   color: hsl(0, 94%, 66%);
