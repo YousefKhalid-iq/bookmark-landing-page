@@ -86,10 +86,11 @@ nav {
   font-size: 1.2rem;
 }
 
-.login-link {
+.header-links .login-link {
   border: 3px solid hsl(0, 0%, 100%);
   padding: 2% 40%;
   border-radius: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.9);
 }
 
 .header-socials {
@@ -177,10 +178,20 @@ h1 {
   padding: 4% 5%;
   margin: 0 1%;
   border-radius: 0.4rem;
-  border-width: 0;
+  border-width: 0.1rem;
+  border-color: hsl(231, 69%, 60%);
+  border-style: solid;
   font-weight: 500;
   box-shadow: 0px 5px 10px hsl(229, 8%, 80%);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.chrome-btn:hover {
+  border-width: 0.1rem;
+  border-color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
 }
 
 .firefox-btn {
@@ -189,10 +200,19 @@ h1 {
   padding: 4% 5%;
   margin: 0 1%;
   border-radius: 0.4rem;
-  border-width: 0;
+  border-width: 0.1rem;
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
   font-weight: 500;
   box-shadow: 0px 5px 10px hsl(229, 8%, 80%);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.firefox-btn:hover {
+  border-color: hsl(229, 31%, 21%);
+  color: hsl(229, 31%, 21%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .more-info-btn {
@@ -399,11 +419,21 @@ h1 {
   padding: 6% 15%;
   margin: 0 1%;
   border-radius: 0.4rem;
-  border-width: 0;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: hsl(231, 69%, 60%);
   font-weight: 500;
   box-shadow: 0px 5px 10px hsl(229, 8%, 80%);
   cursor: pointer;
   font-size: 0.9rem;
+  transition: 0.4s;
+}
+
+.install-btn-cont button:hover {
+  border-width: 0.1rem;
+  border-color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
 }
 
 .extension-section {
@@ -419,6 +449,14 @@ h1 {
 .faq-btn-1, .faq-btn-2, .faq-btn-3, .faq-btn-4 {
   border-bottom: 1px solid hsl(229, 8%, 80%);
 } 
+
+.faq-btn-1 button, .faq-btn-2 button, .faq-btn-3 button, .faq-btn-4 button {
+  transition: 0.3s;
+}
+
+.faq-btn-1 button:hover, .faq-btn-2 button:hover, .faq-btn-3 button:hover, .faq-btn-4 button:hover {
+  color: hsl(0, 94%, 66%);
+}
 
 .faq-btn-cont button {
   width: 100%;
@@ -474,11 +512,21 @@ h1 {
 .info-btn button {
   width: 100%;
   background-color: hsl(231, 69%, 60%);
-  border-width: 0;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: hsl(231, 69%, 60%);
+  cursor: pointer;
   border-radius: 0.4rem;
   padding: 12% 10%;
   color: hsl(0, 0%, 98%);
   font-weight: 500;
+}
+
+.info-btn button:hover {
+  border-width: 0.1rem;
+  border-color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
 }
 
 .contact-form-section {
@@ -516,7 +564,9 @@ form .email-input {
   width: 85%;
   padding: 4%;
   border-radius: 0.4rem;
-  border-width: 0;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: hsl(0, 0%, 100%);
 }
 
 .email-input[type="email"]::placeholder { 
@@ -527,25 +577,23 @@ form .email-input {
 form button {
   width: 84.5%;
   background-color: hsl(0, 94%, 66%);
-  border-width: 0;
+  border-width: 0.1rem;
+  border-color: hsl(0, 94%, 66%);
+  border-style: solid;
   padding: 4%;
   margin-top: 5%;
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
-.email-validation {
-  visibility: hidden;
-  text-align: left;
-  margin: -2% auto;
-  font-size: 0.7rem;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 94%, 66%);
-  width: 84%;
-  border-radius: 0 0 0.5rem 0.5rem;
-  padding: 3% 0;
-  transition: 0.1s ease-in-out;
+form button:hover {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+  border-color: hsl(0, 94%, 66%);
 }
 
 .email-input:focus {
@@ -559,6 +607,19 @@ form button {
   background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 95%;
+}
+
+.email-validation {
+  visibility: hidden;
+  text-align: left;
+  margin: -2% auto;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 94%, 66%);
+  width: 84%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 3% 0;
+  transition: 0.1s ease-in-out;
 }
 
 .email-input:invalid~.email-validation {
@@ -599,7 +660,12 @@ footer {
   text-transform: uppercase;
   color: hsl(0, 0%, 85%);
   letter-spacing: 0.05rem;
-  font-weight: 500;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: hsl(0, 94%, 66%);
 }
 
 .footer-socials {
@@ -615,6 +681,10 @@ footer {
 .footer-socials a {
   padding: 0 4%;
   text-decoration: none;
+}
+
+.footer-socials a:hover {
+  filter: invert(0.40) sepia(1) saturate(20) hue-rotate(313.2deg) brightness(0.96);
 }
 
 @media only screen and (min-width: 500px) {
@@ -680,17 +750,25 @@ footer {
   .header-links a {
     color: hsl(229, 31%, 21%);
     font-size: 1rem;
+    transition: 0.2s;
   }
 
-  .login-link {
-    border: 0; 
+  .header-links a:hover {
+    color: hsl(0, 94%, 66%);
+  }
+
+  .header-links .login-link {
+    border-width: 0.1rem; 
     border-radius: 0.5rem;
     background-color: hsl(0, 94%, 66%);
     padding: 3% 4%;
+    transition: 0.5s;
   }
 
-  .login-link span {
-    color: hsl(0, 0%, 100%);
+  .header-links .login-link:hover {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
   }
 
   .header-socials {
@@ -700,6 +778,7 @@ footer {
   .header-text {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 3%;
   }
 
   .intro-img-cont {
@@ -813,10 +892,20 @@ footer {
     color: hsl(0, 0%, 98%);
     padding: 4% 5%;
     border-radius: 0.4rem;
-    border-width: 0;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: hsl(231, 69%, 60%);
     font-weight: 500;
     cursor: pointer;
+    transition: 0.4s;
   }
+
+  .more-info-btn button:hover {
+    border-width: 0.1rem;
+    border-color: hsl(231, 69%, 60%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 69%, 60%);
+}
 
   .extension-p {
     width: 50%;
@@ -871,12 +960,171 @@ footer {
   .info-btn button {
     width: 50%;
     padding: 8% 5%;
+    transition: 0.4s;
+  }
+
+  .contact-form-section {
+    padding: 5% 0;
+  }
+
+  .form-h2 {
+    width: 40%;
+    padding-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .form-input-flex {
+    width: 70%;
+  }
+
+  form button {
+    width: 20%;
+    margin: 0;
+    height: 100%;
+    padding: 3%;
+  }
+
+  footer {
+    padding: 2% 0 0 0;
+  }
+
+  .footer-flex {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo-img-footer {
+    margin: 0;
+  }
+
+  .footer-links {
+    padding-top: 0.5%;
+    width: 100%;
+  }
+
+  .footer-links li {
+    display: inline;
+    padding: 0 3%;
+  }
+
+  .footer-socials {
+    padding: 0;
+    width: 20%;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .login-link {
+    padding: 2% 4%;
+  }
+
+  .info-btn button {
+    width: 40%;
+    padding: 6% 3%;
+  }
+
+  form {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  nav {
+    width: 82%;
+  }
+
+  h1 {
+    margin: 0 18%;
+    width: 60%;
+    font-size: 2.5rem;
+  }
+
+  .header-p {
+    margin: 0 18%;
+    width: 60%;
+  }
+
+  .header-btn-cont {
+    margin: 0 16.5%;
+  }
+
+  .intro-img {
+    margin-left: -10%;
+  }
+
+  .features-h2 {
+    padding-bottom: 2%;
+  }
+
+  .features-p {
+    width: 50%;
+  }
+
+  #feature-btn-cont {
+    width: 60%;
+  }
+
+  .bookmark-p, .intelligent-p, .share-p {
+    width: 65%;
+  }
+
+  .extension-h2 {
+    padding-bottom: 2%;
+  }
+
+  .extension-p {
+    width: 40%;
+  }
+
+  .extensions-cont {
+    width: 70%;
+  }
+
+  .extension-logos {
+    margin-top: 0;
+  }
+
+  .faq-h2 {
+    padding-bottom: 2%;
+  }
+
+  .faq-p {
+    width: 35%;
+  }
+
+  .info-btn button {
+    width: 30%;
+    padding: 5% 3%;
+  }
+
+  .form-para {
+    font-size: 1rem;
+  }
+
+  .form-h2 {
+    width: 25%;
+    padding-top: 2%;
+  }
+
+  form {
+    width: 40%;
   }
 
 }
+
 .attribution { 
   font-size: 11px; text-align: center; 
   color: hsl(0, 94%, 66%);
+  background-color: hsl(229, 31%, 21%);
+  padding-top: 3%;
 }
 
 .attribution a { 
